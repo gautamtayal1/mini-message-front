@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MessageCard = () => {
+const MessageCard = ({data}) => {
   return (
     <div>
       <div className="card card-dash bg-base-300 w-96">

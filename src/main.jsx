@@ -7,6 +7,7 @@ import Homepage from './components/Homepage.jsx'
 import Form from './components/Form.jsx'
 import { Provider } from 'react-redux'
 import appStore from './utils/appStore.js'
+import DetailsPage from './components/DetailsPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <Provider store = {appStore}>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='/' element={<Homepage />} />
           <Route path='/home' element={<Homepage />} />
           <Route path='/form' element={<Form />} />
+          <Route path='/details' element={<DetailsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
